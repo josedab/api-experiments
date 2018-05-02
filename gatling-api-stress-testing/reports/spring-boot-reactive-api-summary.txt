@@ -1,0 +1,67 @@
+Spring boot reactive api
+===============================================================================
+
+Simulation com.josedab.performance.PerformanceGetGreeting completed in 6 seconds
+================================================================================
+---- Global Information --------------------------------------------------------
+> request count                                     100000 (OK=99999  KO=1     )
+> min response time                                      0 (OK=0      KO=0     )
+> max response time                                   1481 (OK=1481   KO=0     )
+> mean response time                                   175 (OK=175    KO=0     )
+> std deviation                                        135 (OK=135    KO=0     )
+> response time 50th percentile                        157 (OK=157    KO=0     )
+> response time 75th percentile                        223 (OK=223    KO=0     )
+> response time 95th percentile                        360 (OK=360    KO=0     )
+> response time 99th percentile                        855 (OK=855    KO=0     )
+> mean requests/sec                                5263.158 (OK=5263.105 KO=0.053 )
+---- Response Time Distribution ------------------------------------------------
+> t < 800 ms                                         98975 ( 99%)
+> 800 ms < t < 1200 ms                                 859 (  1%)
+> t > 1200 ms                                          165 (  0%)
+> failed                                                 1 (  0%)
+---- Errors --------------------------------------------------------------------
+> j.n.ConnectException: Connection reset by peer: localhost/127.      1 (100.0%)
+0.0.1:8080
+================================================================================
+
+
+Simulation com.josedab.performance.PerformanceGetGreetingWithoutAtomicIncrSimulation completed in 7 seconds
+================================================================================
+---- Global Information --------------------------------------------------------
+> request count                                     100000 (OK=100000 KO=0     )
+> min response time                                      0 (OK=0      KO=-     )
+> max response time                                   1130 (OK=1130   KO=-     )
+> mean response time                                    91 (OK=91     KO=-     )
+> std deviation                                        123 (OK=123    KO=-     )
+> response time 50th percentile                         29 (OK=29     KO=-     )
+> response time 75th percentile                        135 (OK=135    KO=-     )
+> response time 95th percentile                        383 (OK=383    KO=-     )
+> response time 99th percentile                        488 (OK=488    KO=-     )
+> mean requests/sec                                8333.333 (OK=8333.333 KO=-     )
+---- Response Time Distribution ------------------------------------------------
+> t < 800 ms                                         99940 (100%)
+> 800 ms < t < 1200 ms                                  60 (  0%)
+> t > 1200 ms                                            0 (  0%)
+> failed                                                 0 (  0%)
+================================================================================
+
+
+Simulation com.josedab.performance.PerformancePostGreeting completed in 7 seconds
+================================================================================
+---- Global Information --------------------------------------------------------
+> request count                                     100000 (OK=100000 KO=0     )
+> min response time                                      0 (OK=0      KO=-     )
+> max response time                                    853 (OK=853    KO=-     )
+> mean response time                                    84 (OK=84     KO=-     )
+> std deviation                                        115 (OK=115    KO=-     )
+> response time 50th percentile                         26 (OK=26     KO=-     )
+> response time 75th percentile                        115 (OK=115    KO=-     )
+> response time 95th percentile                        343 (OK=343    KO=-     )
+> response time 99th percentile                        480 (OK=480    KO=-     )
+> mean requests/sec                                9090.909 (OK=9090.909 KO=-     )
+---- Response Time Distribution ------------------------------------------------
+> t < 800 ms                                         99996 (100%)
+> 800 ms < t < 1200 ms                                   4 (  0%)
+> t > 1200 ms                                            0 (  0%)
+> failed                                                 0 (  0%)
+================================================================================
